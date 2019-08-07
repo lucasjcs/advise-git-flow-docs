@@ -30,7 +30,7 @@ Após adicionar suas alterações e realizar o commit, é necessário finalizar 
 
 ### Subindo correções diretamente em produção.
 Eventualmente pode ocorrer de um bug chegar ao ambiente de produção, e o ambiente de desenvolvimento ainda não estar preparado para subir. Nesse caso, criamos uma branch de correção, a **Hotfix**. Conforme mostra na imagem do fluxo do git flow, a hotfix deriva da master, que é a nossa branch de produção.
-Na hotfix é permitido realizar as alterações de **correção** de bugs **emergenciais** e subir diretamente para a master, basta criar a branch rodando o comando `git flow hotfix NumeroDaSprint#NumeroDaTask`.
+Na hotfix é permitido realizar as alterações de **correção** de bugs **emergenciais** e subir diretamente para a master, basta criar a branch rodando o comando `git flow hotfix start NumeroDaSprint#NumeroDaTask`.
 
 Após realizar as correções, adicioná-las e commitá-las, finalize a branch com o comando `git flow hotfix finish`, esse comando subirá as alterações para a master,  sendo apenas necessário realizar o push para o TFS.
 
